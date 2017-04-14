@@ -1,12 +1,7 @@
-#!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# _*_ coding: utf-8 _*_
+
 """
-@version: v1.0
-@author: fy
-@site:
-@software: PyCharm
-@file: __init__.py.py
-@time: 2017/4/13 17:32
+python_weibo.py by xianhu
 """
 
 import re
@@ -21,8 +16,13 @@ import binascii
 import requests
 import urllib.parse
 
+import sys
+
 
 class WeiBoLogin(object):
+    """git
+    class of WeiBoLogin, to login weibo.com
+    """
 
     def __init__(self):
         """
@@ -39,6 +39,9 @@ class WeiBoLogin(object):
         return
 
     def login(self, user_name, pass_word):
+        """
+        login weibo.com, return True or False
+        """
         self.user_name = user_name
         self.pass_word = pass_word
         self.user_uniqueid = None
